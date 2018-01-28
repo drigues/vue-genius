@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee|Roboto');
+/*font-family: 'Bungee', cursive;
+font-family: 'Roboto', sans-serif;*/
+
+body {
+  padding: 0;
+  margin: 0;
+  line-height: 1em;
+  background: #2c3e50;
+}
+
+#app {
+  max-width: 600px;
+  width: 100%;
+  margin: auto;
+}
+div#container {
+  text-align: center;
+  width: 100%;
+  padding: 0 20px 20px;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+div#header {
+  padding: 20px 0;
+  font-family: 'Bungee', sans-serif;
+}
+div#header h1 {
+  color: #ecf0f1;
+  font-size: 50px;
+  margin: 20px 0 15px;
+}
+
+div#btn-start {
+  width: 200px;
+  padding: 20px;
+  text-transform: uppercase;
+  background: #8e44ad;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  font-family: 'Bungee', sans-serif;
+  margin: auto;
+  border-radius: 6px;
+  font-size: 24px;
+}
+div#btn-start:active {
+  background: #9b59b6;
+}
+
+div#score-board {
+  font-family: 'Bungee', sans-serif;
+  margin: 0;
+  color: #ecf0f1;
+}
+div#score-board h3 {
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+div#area {
+  padding: 20px;
+  border: 10px solid rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  background: rgba(0, 0, 0, 0.3);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  width: 400px;
+  height: 400px;
+  box-sizing: border-box;
+  border-radius: 100%;
+}
+
+div.btn-game {
+  padding: 20px;
+  border: 10px solid rgba(0, 0, 0, 0.2);
+  display: block;
+  cursor: pointer;
+}
+div.btn-game:active {
+  padding: 20px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  display: block;
+  cursor: pointer;
+}
+
+div#one.btn-game {
+  background: #e74c3c;
+  border-radius: 100% 0 0 0;
+}
+div#two.btn-game {
+  background: #3498db;
+  border-radius: 0 100% 0 0;
+}
+div#three.btn-game {
+  background: #2ecc71;
+  border-radius: 0 0 0 100%;
+}
+div#four.btn-game {
+  background: #f1c40f;
+  border-radius: 0 0 100% 0;
+}
+
+div#one.lightOnR,
+div#one.btn-game:active,
+div#one.lightOnR:active {
+  background: red !important;
+}
+
+div#two.lightOnB,
+div#two.btn-game:active,
+div#two.lightOnB:active {
+  background: blue !important;
+}
+
+div#three.lightOnG,
+div#three.btn-game:active,
+div#three.lightOnG:active {
+  background: green !important;
+}
+
+div#four.lightOnY,
+div#four.btn-game:active,
+div#four.lightOnY:active {
+  background: yellow !important;
+}
+
+@media only screen and (max-width: 500px) {
+  div#area {
+    width: 320px;
+    height: 320px;
+    padding: 10px;
+  }
+  div#header h1 {
+    margin: 10px 0 0;
+    line-height: 1em;
+  }
+}
